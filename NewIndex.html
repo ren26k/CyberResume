@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rennick Foster // Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- ░░ BACKGROUND ░░ -->
+  <div class="background">
+    <canvas id="stars"></canvas>
+    <div class="grid-overlay"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- ░░ CURSOR GLOW ░░ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ░░ NAV ░░ -->
+  <header class="nav" id="mainNav">
+    <a href="#welcome" class="logo">
+      <span class="logo-bracket">[</span>RENNICK<span class="logo-bracket">]</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#courses" class="nav-link">Courses</a>
+      <a href="#certs" class="nav-link">Certs</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ░░ MOBILE MENU ░░ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#courses" class="mobile-link">Courses</a>
+    <a href="#certs" class="mobile-link">Certs</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 1: WELCOME ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="welcome" class="welcome-section">
+    <div class="welcome-inner">
+      <div class="welcome-badge">
+        <span class="badge-dot"></span>
+        AVAILABLE FOR OPPORTUNITIES
+      </div>
+      <div class="profile-photo-wrap">
+        <div class="profile-hex">
+          <img src="me.PNG" alt="Rennick Foster" class="profile-img" />
+          <div class="profile-ring ring1"></div>
+          <div class="profile-ring ring2"></div>
+        </div>
+      </div>
+      <h1 class="welcome-name">
+        <span class="name-line">Rennick</span>
+        <span class="name-line accent">Foster</span>
+      </h1>
+      <div class="welcome-title">
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="welcome-tagline">
+        Hunting threats. Dissecting malware. Building the future of digital defense.
+      </p>
+      <div class="welcome-cta">
+        <a href="#projects" class="btn-primary liquid-glass">View My Work</a>
+        <a href="#contact" class="btn-secondary liquid-glass">Get In Touch</a>
+      </div>
+      <div class="welcome-stats">
+        <div class="stat-item">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Security Courses</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">B+</span>
+          <span class="stat-label">Avg Grade</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Projects</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 2: ABOUT ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░ -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 01</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text glass-panel">
+          <p>
+            I'm a cybersecurity student at <strong>CSN</strong> specializing in
+            <strong>Digital Forensics</strong>, with a passion for malware analysis,
+            network forensics, and real-world threat response.
+          </p>
+          <p>
+            My long-term mission is to build <strong class="accent-text">CyberGuard Solutions</strong>
+            — delivering real protection and a <strong class="accent-text">Crisis Alert System</strong>
+            that keeps organizations ahead of attackers.
+          </p>
+          <p class="muted-text">
+            Completed 6+ security courses with a B+ average. Strong focus on Network Security,
+            Windows, Linux, and VMware environments.
+          </p>
+        </div>
+        <div class="about-aside">
+          <div class="info-card glass-panel">
+            <div class="info-row">
+              <span class="info-icon">◈</span>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Las Vegas, NV</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">◈</span>
+              <div>
+                <span class="info-label">School</span>
+                <span class="info-value">CSN – CyberSecurity</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">◈</span>
+              <div>
+                <span class="info-label">Focus</span>
+                <span class="info-value">Digital Forensics</span>
+              </div>
+            </div>
+            <div class="info-row">
+              <span class="info-icon">◈</span>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">rennick.foster@icloud.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="terminal-card glass-panel">
+            <div class="terminal-bar">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">rennick@cyberguard ~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-output">rennick_foster</p>
+              <p><span class="t-prompt">$</span> cat mission.txt</p>
+              <p class="t-output">Protect. Analyze. Build.</p>
+              <p><span class="t-prompt">$</span> status --career</p>
+              <p class="t-output accent-text">● OPEN TO OPPORTUNITIES<span class="blink-cursor">_</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 3: SKILLS ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░ -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 02</span>
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-categories">
+
+        <div class="skill-category glass-panel">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⬡</span> Forensics & Analysis
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill liquid-glass">Network Forensics</span>
+            <span class="skill-pill liquid-glass">Malware Analysis</span>
+            <span class="skill-pill liquid-glass">Hex Investigation (HxD)</span>
+            <span class="skill-pill liquid-glass">Credential Hash Cracking</span>
+            <span class="skill-pill liquid-glass">Wireshark</span>
+            <span class="skill-pill liquid-glass">Packet Analysis</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⬡</span> Operating Systems
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill liquid-glass">Windows Security</span>
+            <span class="skill-pill liquid-glass">Linux Security</span>
+            <span class="skill-pill liquid-glass">macOS Security</span>
+            <span class="skill-pill liquid-glass">VMware</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⬡</span> Programming & Dev
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill liquid-glass">Python</span>
+            <span class="skill-pill liquid-glass">Luau</span>
+            <span class="skill-pill liquid-glass">HTML / CSS</span>
+            <span class="skill-pill liquid-glass">VS Code</span>
+            <span class="skill-pill liquid-glass">Roblox Studio</span>
+          </div>
+        </div>
+
+        <div class="skill-category glass-panel">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⬡</span> Community & Ops
+          </h3>
+          <div class="skill-pills">
+            <span class="skill-pill liquid-glass">Discord Infrastructure Security</span>
+            <span class="skill-pill liquid-glass">Discord Management</span>
+            <span class="skill-pill liquid-glass">Team Leadership</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 4: PROJECTS ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 03</span>
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-panel">
+          <div class="project-media">
+            <div class="project-img-wrap">
+              <!-- Replace src with actual screenshot -->
+              <div class="project-placeholder">
+                <span class="placeholder-icon">🖥</span>
+                <span class="placeholder-text">Screenshot / Demo</span>
+                <span class="placeholder-sub">Replace with project image</span>
+              </div>
+            </div>
+            <div class="project-tag-strip">
+              <span class="project-tag">CSEC290</span>
+              <span class="project-tag">Forensics</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">01</span>
+            <h3 class="project-title">Infected Windows 11 Workstation</h3>
+            <p class="project-desc">
+              Detected persistent mechanisms, cracked credential hashes, and identified
+              attacker artifacts on a compromised Windows 11 machine in a live lab environment.
+            </p>
+            <div class="project-tech">
+              <span>Windows Forensics</span>
+              <span>Hash Cracking</span>
+              <span>Persistence Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-btn liquid-glass">View Write-Up</a>
+              <a href="#" class="proj-btn proj-btn-ghost liquid-glass">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-panel">
+          <div class="project-media">
+            <div class="project-img-wrap">
+              <div class="project-placeholder">
+                <span class="placeholder-icon">📡</span>
+                <span class="placeholder-text">Screenshot / Demo</span>
+                <span class="placeholder-sub">Replace with project image</span>
+              </div>
+            </div>
+            <div class="project-tag-strip">
+              <span class="project-tag">CIT 217</span>
+              <span class="project-tag">CSEC290</span>
+              <span class="project-tag">CSEC114</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">02</span>
+            <h3 class="project-title">Network Forensic Investigation Labs</h3>
+            <p class="project-desc">
+              Reconstructed attack timelines and identified malicious devices via deep
+              packet analysis. Used Wireshark across multiple course labs.
+            </p>
+            <div class="project-tech">
+              <span>Wireshark</span>
+              <span>Packet Analysis</span>
+              <span>Timeline Reconstruction</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-btn liquid-glass">View Write-Up</a>
+              <a href="#" class="proj-btn proj-btn-ghost liquid-glass">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card glass-panel">
+          <div class="project-media">
+            <div class="project-img-wrap">
+              <div class="project-placeholder">
+                <span class="placeholder-icon">🔬</span>
+                <span class="placeholder-text">Screenshot / Demo</span>
+                <span class="placeholder-sub">Replace with project image</span>
+              </div>
+            </div>
+            <div class="project-tag-strip">
+              <span class="project-tag">CSEC290</span>
+              <span class="project-tag">Steganography</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <span class="project-num">03</span>
+            <h3 class="project-title">Hex Investigation Project</h3>
+            <p class="project-desc">
+              Recovered hidden data embedded inside image files using HxD hex editor.
+              Demonstrated steganographic data recovery techniques.
+            </p>
+            <div class="project-tech">
+              <span>HxD</span>
+              <span>Steganography</span>
+              <span>Data Recovery</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="proj-btn liquid-glass">View Write-Up</a>
+              <a href="#" class="proj-btn proj-btn-ghost liquid-glass">Demo</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 5: COURSES ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="courses" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 04</span>
+        <h2 class="section-title">Course History @ CSN</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="courses-grid">
+
+        <div class="course-card glass-panel">
+          <div class="course-top">
+            <span class="course-code">CSEC 110</span>
+            <span class="course-grade">B+</span>
+          </div>
+          <h3 class="course-name">Introduction to Cybersecurity</h3>
+          <p class="course-desc">Foundations of cybersecurity, threat landscape, CIA triad, security policies.</p>
+          <div class="course-tags"><span>Foundations</span><span>Policy</span></div>
+        </div>
+
+        <div class="course-card glass-panel">
+          <div class="course-top">
+            <span class="course-code">CSEC 114</span>
+            <span class="course-grade">B+</span>
+          </div>
+          <h3 class="course-name">Network Security Fundamentals</h3>
+          <p class="course-desc">TCP/IP analysis, firewall configuration, intrusion detection, Wireshark labs.</p>
+          <div class="course-tags"><span>Networking</span><span>Wireshark</span></div>
+        </div>
+
+        <div class="course-card glass-panel">
+          <div class="course-top">
+            <span class="course-code">CSEC 290</span>
+            <span class="course-grade">A</span>
+          </div>
+          <h3 class="course-name">Digital Forensics</h3>
+          <p class="course-desc">Evidence acquisition, malware analysis, hex editing, incident response.</p>
+          <div class="course-tags"><span>Forensics</span><span>Malware</span><span>HxD</span></div>
+        </div>
+
+        <div class="course-card glass-panel">
+          <div class="course-top">
+            <span class="course-code">CIT 217</span>
+            <span class="course-grade">B</span>
+          </div>
+          <h3 class="course-name">Network Infrastructure</h3>
+          <p class="course-desc">Routing, switching, VLANs, network architecture design, lab environments.</p>
+          <div class="course-tags"><span>Networking</span><span>Infrastructure</span></div>
+        </div>
+
+        <div class="course-card glass-panel">
+          <div class="course-top">
+            <span class="course-code">CSEC 2XX</span>
+            <span class="course-grade">B+</span>
+          </div>
+          <h3 class="course-name">Linux Security</h3>
+          <p class="course-desc">Hardening Linux systems, user/permission management, scripting for security.</p>
+          <div class="course-tags"><span>Linux</span><span>Hardening</span></div>
+        </div>
+
+        <div class="course-card glass-panel">
+          <div class="course-top">
+            <span class="course-code">CSEC 2XX</span>
+            <span class="course-grade">B</span>
+          </div>
+          <h3 class="course-name">Windows Security</h3>
+          <p class="course-desc">Active Directory, Group Policy, Windows event logs, incident response.</p>
+          <div class="course-tags"><span>Windows</span><span>Active Directory</span></div>
+        </div>
+
+      </div>
+      <p class="courses-note muted-text">* Update course codes and grades with your actual transcript information.</p>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 6: CERTIFICATIONS ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="certs" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 05</span>
+        <h2 class="section-title">Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass-panel">
+          <div class="cert-badge">
+            <span class="cert-icon">🛡</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Add Certification Here</h3>
+            <span class="cert-issuer">Issuing Organization</span>
+            <span class="cert-date">Month YYYY</span>
+          </div>
+          <span class="cert-status earned">Earned</span>
+        </div>
+
+        <div class="cert-card glass-panel">
+          <div class="cert-badge">
+            <span class="cert-icon">🔐</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Add Certification Here</h3>
+            <span class="cert-issuer">Issuing Organization</span>
+            <span class="cert-date">In Progress</span>
+          </div>
+          <span class="cert-status in-progress">In Progress</span>
+        </div>
+
+        <div class="cert-card glass-panel cert-placeholder-card">
+          <div class="cert-badge">
+            <span class="cert-icon">＋</span>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">CompTIA Security+</h3>
+            <span class="cert-issuer">CompTIA</span>
+            <span class="cert-date">Target: 2026</span>
+          </div>
+          <span class="cert-status planned">Planned</span>
+        </div>
+
+      </div>
+      <p class="courses-note muted-text">* Add your actual certifications — Coursera, Google, EC-Council, CompTIA, etc.</p>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 7: EXPERIENCE ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 06</span>
+        <h2 class="section-title">Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Founder & Lead Developer</h3>
+              <span class="timeline-company accent-text">CyberGuard Solutions (Concept)</span>
+            </div>
+            <span class="timeline-date">2025 – Present</span>
+            <p class="timeline-desc">
+              Designing the architecture for a future cybersecurity firm focused on crisis alerting,
+              real-time threat detection, and enterprise-grade incident response.
+            </p>
+            <div class="timeline-tags">
+              <span>Leadership</span><span>Architecture</span><span>Vision</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Discord Community Security Manager</h3>
+              <span class="timeline-company">Various Servers</span>
+            </div>
+            <span class="timeline-date">2023 – Present</span>
+            <p class="timeline-desc">
+              Managed infrastructure security, bot hardening, and access control systems
+              for large-scale Discord communities. Led moderation teams and policy enforcement.
+            </p>
+            <div class="timeline-tags">
+              <span>Security Management</span><span>Team Leadership</span><span>Infrastructure</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-panel">
+            <div class="timeline-header">
+              <h3 class="timeline-title">Cybersecurity Student</h3>
+              <span class="timeline-company">College of Southern Nevada (CSN)</span>
+            </div>
+            <span class="timeline-date">2023 – Present</span>
+            <p class="timeline-desc">
+              Pursuing a degree in CyberSecurity with a Digital Forensics concentration.
+              Completed 6+ security courses with hands-on lab work in forensics, networking, and malware analysis.
+            </p>
+            <div class="timeline-tags">
+              <span>Forensics</span><span>Networking</span><span>Malware Analysis</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░░░░░░░░░░░░░░░░░░░ -->
+  <!-- ░░ SECTION 8: CONTACT ░░ -->
+  <!-- ░░░░░░░░░░░░░░░░░░░░ -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-tag">// 07</span>
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p class="contact-intro">
+            Whether you have an opportunity, a question, or just want to connect —
+            I'd love to hear from you.
+          </p>
+          <div class="contact-channels">
+            <a href="mailto:rennick.foster@icloud.com" class="channel-item glass-panel">
+              <span class="channel-icon">✉</span>
+              <div>
+                <span class="channel-label">Email</span>
+                <span class="channel-value">rennick.foster@icloud.com</span>
+              </div>
+            </a>
+            <a href="#" class="channel-item glass-panel">
+              <span class="channel-icon">💬</span>
+              <div>
+                <span class="channel-label">Discord</span>
+                <span class="channel-value">Add your Discord handle</span>
+              </div>
+            </a>
+            <a href="#" class="channel-item glass-panel">
+              <span class="channel-icon">🔗</span>
+              <div>
+                <span class="channel-label">LinkedIn</span>
+                <span class="channel-value">Add your LinkedIn</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-panel"
+              action="mailto:rennick.foster@icloud.com"
+              method="POST"
+              enctype="text/plain">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" name="Name" placeholder="Your name" required class="form-input" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" name="Email" placeholder="your@email.com" required class="form-input" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Preferred Contact Method</label>
+            <select name="Preferred_Contact" class="form-select">
+              <option value="">Select method...</option>
+              <option value="email">Email</option>
+              <option value="sms">SMS / Text</option>
+              <option value="discord">Discord</option>
+              <option value="linkedin">LinkedIn</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Type of Inquiry</label>
+            <select name="Inquiry_Type" class="form-select">
+              <option value="">Select type...</option>
+              <option value="opportunity">Job / Internship Opportunity</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="question">General Question</option>
+              <option value="hire">Hire for Project</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <textarea name="Message" placeholder="Your message..." required class="form-textarea" rows="5"></textarea>
+          </div>
+          <button type="submit" class="btn-primary liquid-glass form-submit">
+            <span>Send Message</span>
+            <span class="submit-arrow">→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>RENNICK<span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-tagline">Cybersecurity Student · Forensics Analyst · Future Founder</p>
+      <p class="footer-copy">© 2026 Rennick Foster // All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
